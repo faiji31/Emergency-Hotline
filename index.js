@@ -4,6 +4,7 @@ const callBtns = document.querySelectorAll(".call-btn");
 const copyBtns = document.querySelectorAll(".fa-copy, .copy-btn");
 const heartCount = document.getElementById("heart-count");
 const coinCount = document.getElementById("coin-count");
+const copyCount = document.getElementById("copy-count"); // ✅ new copy counter
 const historyList = document.getElementById("history-list");
 const clearBtn = document.getElementById("clear-history");
 
@@ -63,7 +64,8 @@ copyBtns.forEach(btn => {
 
     navigator.clipboard.writeText(number).then(() => {
       copies++;
-      alert(`Copied: ${number} ✅ (Total Copies: ${copies})`);
+      copyCount.textContent = copies; // ✅ update navbar
+      alert(`Copied: ${number} ✅`);  // ✅ show alert
     });
   });
 });
