@@ -9,28 +9,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="flex justify-between mx-5 md:mx-20 py-5">
-    <div class="flex items-center gap-4">
-      <img src="assets/logo.png" alt="" class="w-[50px] h-[50px]">
-      <h1 class="font-bold text-2xl text-green-900">Emergency <br> Service</h1>
+  <!-- nav -->
+  <nav class="flex flex-col md:flex-row justify-between items-center gap-3 mx-4 md:mx-20 py-4">
+    <div class="flex items-center gap-3">
+      <img src="assets/logo.png" alt="logo" class="w-[45px] h-[45px] md:w-[50px] md:h-[50px]">
+      <h1 class="font-bold text-xl md:text-2xl text-green-900">Emergency <br class="md:hidden"> Service</h1>
     </div>
-    <div class="flex gap-4 items-center">
-      <!-- Heart -->
-      <div class="flex items-center gap-1 w-[100px] h-[40px] bg-green-200 rounded-full justify-center">
+    <div class="flex gap-2 md:gap-4 items-center flex-wrap">
+      <!-- heart -->
+      <div class="flex items-center gap-1 w-[90px] h-[38px] bg-green-200 rounded-full justify-center">
         <i class="fa-solid fa-heart text-red-500"></i>
         <p id="heart-count">0</p>
       </div>
-      <!-- Coins -->
-      <div class="flex items-center gap-1 w-[100px] h-[40px] bg-green-200 rounded-full justify-center">
-        <img src="assets/coin.png" alt="" class="w-[25px] h-[25px]">
+      <!-- coins -->
+      <div class="flex items-center gap-1 w-[90px] h-[38px] bg-green-200 rounded-full justify-center">
+        <img src="assets/coin.png" alt="" class="w-[22px] h-[22px]">
         <p id="coin-count">100</p>
       </div>
-      <button class="bg-[#00A60E] w-[100px] h-[40px] rounded-full text-white font-semibold">2 Copy</button>
+      <button class="bg-[#00A60E] w-[100px] h-[38px] rounded-full text-white font-semibold">2 Copy</button>
     </div>
   </nav>
 
-  <!-- Hero -->
+
+  <!-- main-1 -->
   <section class="justify-center text-center mt-5 bg-green-900 py-10">
     <img src="assets/logo.png" alt="" class="mx-auto w-[92px] h-[92px]">
     <h1 class="text-[30px] md:text-[40px] font-bold text-white">Emergency Service Directory</h1>
@@ -39,7 +40,7 @@
     </p>
   </section>
 
-  <!-- Main -->
+  <!-- main - 2-->
   <main class="bg-green-100">
     <section id="products-container" class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8">
       <!-- Cards -->
